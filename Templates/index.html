@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{url_for('static', filename='assets/img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static', filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +19,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/css/main.css')}}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Logis
@@ -44,9 +44,9 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="#" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/temp_logo.png" alt="" style="height: 60px; width: 200px;">
+        <img src="{{url_for('static', filename='assets/img/temp_logo.png')}}" alt="" style="height: 60px; width: 200px;">
         <!-- <h1>Logis</h1> -->
       </a>
 
@@ -110,7 +110,7 @@
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
                 <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="6" class="purecounter"></span>
-                <p>UT'S</p>
+                <p>Union Territories</p>
               </div>
             </div><!-- End Stats Item -->
 
@@ -133,7 +133,7 @@
 
         <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
           <div style="width: 470px; height: 450px; overflow: hidden; border-radius: 50%; position: relative;">
-              <img src="assets/img/temp_hero2.jpg" class="img-fluid" alt="New Image Description" style="width: 100%; height: 100%; object-fit: cover;">
+              <img src="{{url_for('static', filename='assets/img/temp_hero2.jpg')}}" class="img-fluid" alt="New Image Description" style="width: 100%; height: 100%; object-fit: cover;">
               <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);"></div>
           </div>
       </div>
@@ -190,13 +190,13 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-            <img src="assets/img/temp_about2.jpg" class="img-fluid" alt="" style="margin-left: 65px; margin-top: 35px;">
+            <img src="{{url_for('static', filename='assets/img/temp_about2.jpg')}}" class="img-fluid" alt="" style="margin-left: 65px; margin-top: 35px;">
             <a href="https://www.youtube.com/watch?v=CmP67zq5hfo" class="glightbox play-btn"></a>
           </div>
           <div class="col-lg-6 content order-last  order-lg-first">
             <h3>About Us</h3>
             <p>
-              WE'RE on a MISSION to Revolutionize the way we think about electronic waste (E-WASTE) and its impact on our PLANET. We believe that responsible e-waste disposal is not just a CHOICE; it's a RESPOSIBILITY we ALL SHARE.
+              WE ARE on a MISSION to Revolutionize the way we think about electronic waste (E-WASTE) and its impact on our PLANET. We believe that responsible e-waste disposal is not just a CHOICE; it is a RESPOSIBILITY we ALL SHARE.
             </p>
             <ul>
               <li data-aos="fade-up" data-aos-delay="100">
@@ -217,7 +217,7 @@
                 <i class="bi bi-broadcast"></i>
                 <div>
                   <h5>EDUCATION AND REWARDS</h5>
-                  <p>We aim to educate and empower individuals and communities to make informed choices about e-waste. We're here to reward your efforts, turning responsible actions into tangible benefits.</p>
+                  <p>We aim to educate and empower individuals and communities to make informed choices about e-waste. We are here to reward your efforts, turning responsible actions into tangible benefits.</p>
                 </div>
               </li>
             </ul>
@@ -242,17 +242,17 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/nearest_ewaste_facility_pic.webp" alt="" class="img-fluid" style="height: 220px;">
+                <img src="{{url_for('static', filename='assets/img/nearest_ewaste_facility_pic.webp')}}" alt="" class="img-fluid" style="height: 220px;">
               </div>
               <h3><a href="get-a-quote.html" class="stretched-link">Nearest E-Waste Facilities</a></h3>
-              <p>Our E-Waste Locator Service helps you easily find the closest e-waste collection and recycling facilities. Simply enter your location, and we'll provide a list of nearby centers</p>
+              <p>Our E-Waste Locator Service helps you easily find the closest e-waste collection and recycling facilities. Simply enter your location, and we will provide a list of nearby centers</p>
             </div>
           </div><!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/estimate_device_value_pic3.jpg" alt="" class="img-fluid" style="height: 220px;">
+                <img src="{{url_for('static', filename='assets/img/estimate_device_value_pic3.jpg')}}" alt="" class="img-fluid" style="height: 220px;">
               </div>
               <h3><a href="get-a-quote.html" class="stretched-link">Estimate Your Device's Value</a></h3>
               <p>Curious about the hidden worth of your old devices? Our Device Value Estimation service analyzes your device to estimate the quantity of precious metals it contains. Discover its potential value based on current market prices and make informed recycling decisions.</p>
@@ -262,7 +262,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/rewards_catalog_pic2jpg.png" alt="" class="img-fluid" style="height: 220px;">
+                <img src="{{url_for('static', filename='assets/img/rewards_catalog_pic2jpg.png')}}" alt="" class="img-fluid" style="height: 220px;">
               </div>
               <h3><a href="get-a-quote.html" class="stretched-link">EARN 'n' Redeem Your Credits</a></h3>
               <p>Visit our Rewards Catalog to explore a variety of rewards available for redemption using your accumulated credits. Choose from eco-friendly products, exclusive discounts, and even options to donate your credits to support environmental causes.</p>
@@ -272,7 +272,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/educational_content_pic3.jpg" alt="" class="img-fluid" style="height: 220px;">
+                <img src="{{url_for('static', filename='assets/img/educational_content_pic3.jpg')}}" alt="" class="img-fluid" style="height: 220px;">
               </div>
               <h3><a href="get-a-quote.html" class="stretched-link">Learn About E-Waste</a></h3>
               <p>Dive into our library of Educational Resources to expand your knowledge about e-waste. Explore articles, guides, and infographics that explain the environmental and health impacts of e-waste and how responsible recycling can make a difference.</p>
@@ -282,7 +282,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/community_engagement_pic3.webp" alt="" class="img-fluid" style="height: 220px;">
+                <img src="{{url_for('static', filename='assets/img/community_engagement_pic3.webp')}}" alt="" class="img-fluid" style="height: 220px;">
               </div>
               <h3><a href="get-a-quote.html" class="stretched-link">User Community</a></h3>
               <p>Join our User Community to connect with like-minded individuals who share your passion for responsible e-waste recycling. Share your experiences, tips, and success stories, and be part of a growing movement for a greener planet.</p>
@@ -292,7 +292,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/sustainable_tech_pic5.jpg" alt="" class="img-fluid" style="height: 220px;">
+                <img src="{{url_for('static', filename='assets/img/sustainable_tech_pic5.jpg')}}" alt="" class="img-fluid" style="height: 220px;">
               </div>
               <h3><a href="get-a-quote.html" class="stretched-link">Shop Sustainable Tech</a></h3>
               <p>Explore our Green Tech Marketplace for a selection of environmentally friendly and energy-efficient electronics. Purchase eco-conscious gadgets and accessories to support sustainability in your tech choices.</p>
@@ -326,7 +326,7 @@
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
 
           <div class="col-md-5">
-            <img src="assets/img/temp_feature1_pic.jpg" class="img-fluid" alt="">
+            <img src="{{url_for('static', filename='assets/img/temp_feature1_pic.jpg')}}" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
             <h3>E-Waste Management: As a Challenge to Public Health in India</h3>
@@ -343,7 +343,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
           <div class="col-md-5 order-1 order-md-2">
-            <img src="assets/img/temp_feature2_pic.jpg" class="img-fluid" alt="" style="height: 325px; width: 150%">
+            <img src="{{url_for('static', filename='assets/img/temp_feature2_pic.jpg')}}" class="img-fluid" alt="" style="height: 325px; width: 150%">
           </div>
           <div class="col-md-7 order-2 order-md-1">
             <h3>E-waste Recycling: Formal and Informal Sectors</h3>
@@ -359,7 +359,7 @@
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
           <div class="col-md-12 text-center">
             <h3>E-WASTE & THE WORLD</h3>
-              <img src="assets/img/temp_feature5_pic.png" class="img-fluid" alt="" style="width: 90%; height: 90%; border-radius: 80%; border: 20px solid #09024a; overflow: hidden;">
+              <img src="{{url_for('static', filename='assets/img/temp_feature5_pic.png')}}" class="img-fluid" alt="" style="width: 90%; height: 90%; border-radius: 80%; border: 20px solid #09024a; overflow: hidden;">
           </div>
       </div><!-- Features Item -->
       
@@ -678,7 +678,7 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/temp_logo.png" alt="">
+            <img src="{{url_for('static', filename='assets/img/temp_logo.png')}}" alt="">
           </a>
           <p>We invite you to join us on this journey toward a cleaner, greener future. Together, we can make a difference, one device at a time.</p>
           <div class="social-links d-flex mt-4">
@@ -747,15 +747,15 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{url_for('static', filename='assets/js/main.js')}}"></script>
 
 </body>
 
