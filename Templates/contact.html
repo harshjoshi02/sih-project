@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Logis Bootstrap Template - Contact</title>
+  <title>E-Waste Management</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{url_for('static', filename='assets/img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static', filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +19,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="{{url_for('static', filename='assets/css/main.css')}}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Logis
@@ -46,7 +46,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/temp_logo.png" alt="" style="height: 60px; width: 200px;">
+        <img src="{{url_for('static', filename='assets/img/temp_logo.png')}}" alt="" style="height: 60px; width: 200px;">
         <!-- <h1>Logis</h1> -->
       </a>
 
@@ -75,7 +75,7 @@
               <li><a href="#">Other Articles</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="/locate">Find your nearest collection centre.</a></li>
           <li><a href="estimate.html">Get Device Estimate</a></li>
           <li><a class="get-a-quote" href="get-a-quote.html">SIGN IN</a></li>
         </ul>
@@ -89,11 +89,11 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+      <div class="page-header d-flex align-items-center" style="background-image: url('{{url_for('static', filename='assets/img/page-header.jpg')}}');">
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Contact Us</h2>
+              <h2>Nearby E-Waste Collection Centre</h2>
               <!-- <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p> -->
             </div>
           </div>
@@ -102,7 +102,7 @@
       <nav>
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="">Home</a></li>
             <li>Contact</li>
           </ol>
         </div>
@@ -188,7 +188,7 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/temp_logo.png" alt="">
+            <img src="{{url_for('static', filename='assets/img/temp_logo.png')}}" alt="">
           </a>
           <p>We invite you to join us on this journey toward a cleaner, greener future. Together, we can make a difference, one device at a time.</p>
           <div class="social-links d-flex mt-4">
@@ -258,15 +258,15 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{url_for('static', filename='assets/js/main.js')}}"></script>
 
 </body>
 

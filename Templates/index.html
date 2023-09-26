@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Logis Bootstrap Template - Index</title>
+  <title>E-Waste Management</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -54,9 +54,8 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="about" class="inactive">About</a></li>
           <!-- <li><a href="pricing.html">Pricing</a></li> -->
           <li class="dropdown"><a href="#"><span>Articles</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -75,8 +74,7 @@
               <li><a href="#">Other Articles</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="estimate.html">Get Device Estimate</a></li>
+          <li><a href="locate">locate your nearest E-Waste collection centre</a></li>
           <li><a class="get-a-quote" href="get-a-quote.html">SIGN IN</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -91,10 +89,10 @@
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h2 data-aos="fade-up">THE  ULTIMATE  REWARDING  e-waste  RECYCLING  HUB</h2>
-          <h5 data-aos="fade-up" data-aos-delay="100">FIND THE NEARBY E-WASTE COLLECTOR</h5>
-
-          <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-            <input type="text" class="form-control" placeholder="ZIP code or CitY">
+          <h5 data-aos="fade-up" data-aos-delay="100">Enter your device details</h5>
+          <form action="#" method="post" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" name="brand" class="form-control" placeholder="Device Brand">
+            <input type="text" name="model" class="form-control" placeholder="Model Name">
             <button type="submit" class="btn btn-primary">Search</button>
           </form>
 
@@ -310,9 +308,16 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
+            {% if data %}
+              <h3>Device Estimate</h3>
+              <p>{{data}}</p>
+              <a class="cta-btn" href="/locate">Go to your nearest Service centre</a>
+            {% else %}
             <h3>Unlock the Full Potential of Our Services</h3>
             <p> Discover a world of possibilities by becoming a part of our community. When you sign up or sign in, you gain access to a host of valuable services, rewards, and resources designed to make your e-waste journey more rewarding and eco-conscious.</p>
             <a class="cta-btn" href="get-a-quote.html">CREATE ACCOUNT</a>
+            {% endif %}
+            
           </div>
         </div>
 
